@@ -45,7 +45,7 @@ function viewDepartments(){
 }
 
 function viewRoles(){
-    const sql = `SELECT * FROM role`;
+    const sql = `SELECT * FROM roles`;
   
   db.query(sql, (err, rows) => {
     if (err) {
@@ -63,7 +63,7 @@ function viewEmployees(){
     if (err) {
        return;
     }
-    console.table(rows)
+    console.log(rows)
     init()
   });
 }
